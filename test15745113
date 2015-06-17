@@ -1,0 +1,32 @@
+#!/bin/bash
+
+((x=$1))
+((y=$2))
+((z=0))
+((ans=0))
+
+if (( x >= y ))
+then
+  ((z = $((x %= y))))
+  while ((z !=0))
+  do
+  ((x = y))
+  ((y = z))
+  ((z = $(x %= y))))
+done 
+  ((ans =y ))
+  echo $ans
+
+else
+  ((z = $((y %= x))))
+  while ((z !=0))
+  do
+   ((y = x))
+   ((x = z))
+   ((z = $((y %= x))))
+  done
+   ((ans = x))
+
+  echo $ans
+fi
+
