@@ -1,0 +1,34 @@
+
+
+
+#!/bin/bash
+
+ans=$(./test15745113 20 12)
+
+if [ "$ans" -eq 4 ]
+
+  then
+ 
+   echo "Test1 ok!"
+
+  else
+
+   echo "Test1 ng"
+
+fi
+
+ans=$(./test15745113 35 15)
+
+if [ "$ans" -eq 5 ]
+
+  then
+
+   echo "Test2 ok!"
+
+  else
+
+   echo "Test2 ng"
+
+fi
+
+
